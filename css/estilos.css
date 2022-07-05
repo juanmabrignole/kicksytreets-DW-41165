@@ -1,40 +1,28 @@
-/*Font-Family*/
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+/*Font Descargada*/
 @font-face {
     font-family: "poppins";
     src: url("../assets/fonts/Poppins-SemiBold.ttf");
 }
+
 /*Selector Universal*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
 }
 
-/*Medidas relativas*/
-/*Porcentaje*/
-html{
-    font-size: 62.5%;
-}
+/*medidas*/
+/*html{
+    font-size: 10px;
+}*/
 
+/*Medidas Relativas*/
 p{
-    font-size: 2rem;
     font-family: "poppins", sans-serif;
-}
-
-
-/*sintáxis CSS*/
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
-section{
-    padding: 20px 25px 20px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 main section article img{
@@ -45,10 +33,11 @@ main section article img{
     border-radius: 10px;
 }
 
+
 .font-destacados{
+    font-family: 'Oswald', sans-serif;
     font-size: 30px;
     letter-spacing: 2px;
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
 
@@ -60,57 +49,238 @@ main section article img{
     background-image: url('../assets/backgrounds/3d-abstract-wave-pattern-background.jpg');
     background-size: cover;
     background-position: center;
-}
-
-#footer article h4{
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 300;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 1.5px;  
 }
 
+/*List Style*/
 ul{
-    list-style-type: none;   
+    list-style-type: none;
 }
 
 nav ul li a{
     text-decoration: none;
 }
 
-.box{
-    height: 800px;
-    background-image: url('../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-body{
-    padding-bottom: 1000em;
-}
-
+/*Efecto Parallax*/
 .banner{
     width: 100%;
     height: 700px;
-    background-image: url('../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg');
+    background-image: url("../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg");
     background-size: cover;
+    /*Parallax*/
     background-attachment: fixed;
 }
 
 .banner2{
     width: 100%;
     height: 700px;
-    background-image: url('../assets/img/lasbarrets-01.png');
+    background-image: url("../assets/img/lasbarrets-01.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+/*manejo de imágen*/
+/*Woman Section*/
+.imgbannerwoman{
+    width: 100vw;
+    height: 50%;
+}
 
+/*Box-Modeling*/
+.mujer-header-style{
+    height: 180px;
+    border: 1px solid black;
+    margin: 20px 30px;
+    background-color: aqua;
+}
 
+/*Elementos de línea, Bloque y Linea-Bloque*/ 
+.mujer-header-style h1{
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: black;
+    background-color: #f10086;
+}
 
+.lideramos{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
 
+/*Tarjetas Mujer*/
+/*Metodologia BEM*/
+.contenedor{
+    max-width: 500px;
+    width: 100%;
+    margin-left: 15px;
+}
+
+/*Bloque 1*/
+.tarjeta{
+    width: 600px;
+}
+
+.tarjeta__miniatura{
+    height: 200px;
+}
+
+.tarjeta__imagen{
+    width: 60%;
+}
+
+.tarjeta__textos {
+    font-family: 'Oswald', sans-serif ;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .tarjeta__enlace {
+    color: #f10086;
+    padding: 10px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .tarjeta__parrafo {
+    font-family: 'Oswald', sans-serif;
+    max-width: 90%;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+    
+  /*Bloque 2*/
+  .boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #000;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+  }
+  /*.boton:hover {
+    background-color: transparent;
+    border: 1px solid black;
+  }*/
+  
+  .boton__texto {
+    color: black;
+    font-size: 16px;
+  }
+  
+  /*Modificador BEM*/
+  /*.boton--alternativo {
+    font-size: 20px;
+    font-weight: bold;
+  }*/
+
+  .background-after{
+    width: 100%;
+    height: 700px;
+    background-image: url('../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box{
+    width: 100%;
+    height: 700px;
+    background-image: url('../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*OverFlow*/
+  .article-woman{
+    display: none;
+    width: 250px;
+    height: 250px;
+    background-color:  #85c1e9 ;
+    border: 5px groove black;
+    overflow: hidden;
+    margin: 20px 20px;
+  }
+
+  .article-woman p{
+    padding: 10px;
+    font-family: "poppins", sans-serif;
+    color: black;
+  }
+
+  /*Inline-block + manejo de imágen*/
+  img{
+    max-width: 100%;
+  }
+
+  .caja{
+    border: 1px solid #999;
+    color: #444;
+    padding: 1em;
+    width: 49%;
+    display: inline-block;
+  }
+
+  .cajita-position{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+  }
+
+#dos{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: blue;
+}
+
+/*Position Fixed* comentar para utilizar en MENU CON SUBMENU/
+/*.menu-fixed{
+  position: fixed;
+}*/
+
+.lideramos{
+  position: sticky;
+  top: 0;
+}
+
+/*menu con submenu*/
+/*Navbar*/
+ul{
+  font-size: 0;
+}
+
+li{
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  font-size: 14px;
+}
+
+ul ul{
+  position: absolute;
+  display: none;
+}
+
+ul ul li{
+  display: block;
+}
+
+ul li:hover ul{
+  display: block;
+}
 
 
 
