@@ -25,12 +25,26 @@ p{
     font-size: 1rem;
 }
 
-main section article img{
-    width: 700px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+/*Manejo de Imágenes*/
+.principales{
+    margin: 25px;
+}
+
+.img-main{
+    width: 33.33%;
+    box-shadow: 8px -10px gold;
+    padding: 30px auto;
     border-radius: 10px;
+}
+
+/*Videos*/
+.video-homenaje{
+    width: 60%;
+    margin: auto;
+}
+
+video{
+    width: 100%;
 }
 
 
@@ -52,15 +66,10 @@ main section article img{
     font-family: 'Oswald', sans-serif;
 }
 
-/*List Style*/
-ul{
-    list-style-type: none;
-}
 
-nav ul li a{
-    text-decoration: none;
-}
 
+
+/*Background-image*/
 /*Efecto Parallax*/
 .banner{
     width: 100%;
@@ -80,7 +89,6 @@ nav ul li a{
     background-attachment: fixed;
 }
 
-/*manejo de imágen*/
 /*Woman Section*/
 .imgbannerwoman{
     width: 100vw;
@@ -88,31 +96,12 @@ nav ul li a{
 }
 
 /*Box-Modeling*/
-.mujer-header-style{
-    height: 180px;
-    border: 1px solid black;
-    margin: 20px 30px;
-    background-color: aqua;
-}
+
 
 /*Elementos de línea, Bloque y Linea-Bloque*/ 
-.mujer-header-style h1{
-    display: inline;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    font-size: 25px;
-    color: black;
-    background-color: #f10086;
-}
 
-.lideramos{
-    font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-}
+
+
 
 /*Tarjetas Mujer*/
 /*Metodologia BEM*/
@@ -125,6 +114,7 @@ nav ul li a{
 /*Bloque 1*/
 .tarjeta{
     width: 600px;
+    border: 5px solid black;
 }
 
 .tarjeta__miniatura{
@@ -135,152 +125,121 @@ nav ul li a{
     width: 60%;
 }
 
-.tarjeta__textos {
-    font-family: 'Oswald', sans-serif ;
+.tarjeta__textos{
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
     margin-bottom: 20px;
     color: black;
-  }
-  
-  .tarjeta__enlace {
+}
+
+.tarjeta__enlace{
     color: #f10086;
     padding: 10px auto;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-  }
-  
-  .tarjeta__parrafo {
+}
+
+.tarjeta__parrafo{
     font-family: 'Oswald', sans-serif;
     max-width: 90%;
     line-height: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-  }
-    
-  /*Bloque 2*/
-  .boton {
-    display: inline-block;
-    padding: 12px 25px;
+}
+
+/*Bloque 2*/
+.boton{
+    font-size: 14px;
+    padding: 8px 35px;
     background-color: #000;
     border-radius: 25px;
     text-decoration: none;
     color: white;
-  }
-  /*.boton:hover {
-    background-color: transparent;
-    border: 1px solid black;
-  }*/
-  
-  .boton__texto {
-    color: black;
-    font-size: 16px;
-  }
-  
-  /*Modificador BEM*/
-  /*.boton--alternativo {
+    font-family: "poppins", sans-serif;
+}
+
+/*Modificador*/
+.boton--alternativo{
     font-size: 20px;
     font-weight: bold;
-  }*/
+}
 
-  .background-after{
-    width: 100%;
-    height: 700px;
-    background-image: url('../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-  .box{
-    width: 100%;
-    height: 700px;
-    background-image: url('../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  /*OverFlow*/
-  .article-woman{
-    display: none;
-    width: 250px;
-    height: 250px;
-    background-color:  #85c1e9 ;
-    border: 5px groove black;
-    overflow: hidden;
-    margin: 20px 20px;
-  }
-
-  .article-woman p{
-    padding: 10px;
+/*Flexbox*/
+.flex-container{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*Eje X*/
+    justify-content: center;
+    /*Eje Y*/
+    align-items: center;
+    /*Alinea en el eje y cuando los elementos son multilinea*/
+    align-content: space-around;
+    font-size: 3rem;
     font-family: "poppins", sans-serif;
-    color: black;
-  }
-
-  /*Inline-block + manejo de imágen*/
-  img{
-    max-width: 100%;
-  }
-
-  .caja{
-    border: 1px solid #999;
-    color: #444;
-    padding: 1em;
-    width: 49%;
-    display: inline-block;
-  }
-
-  .cajita-position{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: red;
-    color: white;
-  }
-
-#dos{
-  position: relative;
-  top: 20px;
-  left: 20px;
-  background: blue;
+    background-color: #f10086;
+    border-radius: 10px;
+    border: 2px solid yellow;  
 }
 
-/*Position Fixed* comentar para utilizar en MENU CON SUBMENU/
-/*.menu-fixed{
-  position: fixed;
-}*/
-
-.lideramos{
-  position: sticky;
-  top: 0;
+.flex-container > *{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aqua;
 }
 
-/*menu con submenu*/
-/*Navbar*/
-ul{
-  font-size: 0;
+/*order*/
+.uno{
+    order: 3;
 }
 
-li{
-  display: inline-block;
-  width: 25%;
-  position: relative;
-  font-size: 14px;
+/*Navbar Flexbox*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-family: "poppins", sans-serif;
+    background-color: #000;
 }
 
-ul ul{
-  position: absolute;
-  display: none;
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
-ul ul li{
-  display: block;
+/*Columna en fila*/
+.nav__list{
+    display: flex;
+    list-style-type: none;
 }
 
-ul li:hover ul{
-  display: block;
+.nav__list .list__links{
+    padding: 0 15px;
 }
+
+.btn{
+    border: none;
+}
+
+.btn a{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+}
+
+
+
+
+
 
 
 

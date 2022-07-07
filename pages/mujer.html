@@ -4,73 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Asome-->
+    <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
     <!--icono favicon-->
     <link rel="shortcut icon" href="../assets/icons/logo-favicon_Mesa de trabajo 1.svg" type="image/x-icon">
-    <!--Hoja de Estilos CSS-->
+    <!--Hoja de Estilos CSS Externa-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>kickstreets-mujer</title>
 </head>
 <body>
-    <nav class="menu-fixed">
-        <a href="../index.html">
-            <img src="../assets/icons/logo-transparent.png" alt="logo-kickstreets" width="100px">
-        </a>
-        <!--hipervínculos a mis distintas páginas web-->
-       <!--Listas desordenadas-->
-       <!--Icono a home-->
-       <ul>
-           <li> <a href="../index.html">Inicio</a></li>
-           <li> <a href="../pages/promociones.html">Promociones</a>
-                <!--MENU CON SUBMENU-->
-                <ul>
-                    <li> <a href="#">Verano 2022</a></li>
-                    <li> <a href="#">Otoño 2022</a></li>
-                    <li> <a href="#">Invierno 2022</a></li>
-                </ul>
-            </li>
-           <li> <a href="#">Mujer</a></li>
-           <li> <a href="../pages/hombre.html">Hombre</a></li>
-           <li> <a href="../pages/contacto.html">Contacto</a></li>
-       </ul>
-   </nav>
+    
+    <!--Navbar con Flexbox-->
+<header>
+ <div class="logo">
+    <a href="../index.html">Inicio</a>
+ </div>
 
-   <header class="mujer-header-style">
-    <h1>Siempre hacia adelante</h1>
-   </header>
+ <nav>
+    <ul class="nav__list">
+        <li class="list__links"><a href="#">Promociones</a></li>
+        <li class="list__links"><a href="#">Mujer</a></li>
+        <li class="list__links"><a href="#">Hombre</a></li> 
+    </ul>   
+ </nav>
 
+    <button class="btn">
+        <a href="#">Contacto</a>
+    </button>
 
-    <!--manejo de imágen-->   
-   <section class="banner-woman">
-    <article>
-       <img class="imgbannerwoman" src="../assets/img/mujer/lohacemosjuntas.jpg" alt="programalohacemosjuntas">
-    </article>
-   </section>
+</header>
 
    <!--OverFlow-->
-   <article class="article-woman">
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque, consequuntur est porro culpa laboriosam repellat impedit distinctio id explicabo harum! Excepturi laudantium, ratione voluptas qui beatae repudiandae dolor officiis!</p>
-   </article>
+   
 
-   <!--Metodologia BEM-->
    <h1 class="lideramos">Nosotras Lideramos</h1>
+   
+   <!--Metodologia BEM-->
    <section class="contenedor">
+    <!--Bloque 1-->
     <article class="tarjeta">
-        <a class="tarjeta_miniatura" href="#">
-            <img class="tarjeta__imagen" src="../assets/img/mujer/john-torcasio-T5PQiABBnZI-unsplash.jpg" alt="futbol-femenino">
+        <a class="tarjeta__miniatura" href="#">
+           <img class="tarjeta__imagen" src="../assets/img/mujer/john-torcasio-T5PQiABBnZI-unsplash.jpg" alt="futbol-femenino"> 
         </a>
-
+        
         <article class="tarjeta__textos">
             <h3 class="tarjeta__titulo">
                 <a class="tarjeta__enlace" href="#">Marles Garces</a>
             </h3>
-            <p class="tarjeta__parrafo">
-            “El deporte necesita mujeres que puedan ser un ejemplo”.</p>
-            <button class="boton boton--alternativo">Saber Mas</button>  
+            <p class="tarjeta__parrafo" >"El deporte necesita mujeres que puedan ser ejemplo".</p>
+
+             <!--Bloque 2-->
+             <button class="boton">Saber Mas</button>
         </article>
     </article>
    </section>
 
-   <!--Elementos Inline+ manejo de imágen-->
+   <!--Elementos Inline+ manejo de imágen
     <article class="caja">
         <img src="../assets/img/malvestida-DMl5gG0yWWY-unsplash.jpg" alt="nikeairone">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est, cumque voluptate tenetur vel eveniet reiciendis harum earum aliquam iste dolores amet animi voluptates ipsam voluptas culpa. Odio ea voluptatum neque architecto nobis officia distinctio laborum libero qui, praesentium pariatur non sunt? Quae quasi quidem vero quia doloribus blanditiis aliquam?</p>
@@ -85,7 +74,8 @@
         <img src="../assets/img/malvestida-DMl5gG0yWWY-unsplash.jpg" alt="nikejordan">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est, cumque voluptate tenetur vel eveniet reiciendis harum earum aliquam iste dolores amet animi voluptates ipsam voluptas culpa. Odio ea voluptatum neque architecto nobis officia distinctio laborum libero qui, praesentium pariatur non sunt? Quae quasi quidem vero quia doloribus blanditiis aliquam?</p>
     </article>
-
+    -->
+    
     <!--Position-->
    <div class="cajita-position" id="uno">UNO</div>
    <div class="cajita-position" id="dos" >DOS</div>
