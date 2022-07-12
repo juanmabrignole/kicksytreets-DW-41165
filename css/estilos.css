@@ -14,9 +14,9 @@
 }
 
 /*medidas*/
-/*html{
-    font-size: 10px;
-}*/
+html{
+    height: 100%;
+}
 
 /*Medidas Relativas*/
 p{
@@ -234,6 +234,83 @@ a{
     padding: 10px;
     border-radius: 10px;
     color: #000;
+}
+
+/*CSS GRIDS*/
+
+/*Css Grid Teoría*/
+.grid-container{
+    /*text*/
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+
+    /*boxmodeling*/
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    border: 2px groove black;
+    
+    
+    /*Cajas Flexibles*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    /*Grid Areas*/
+    grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "nav main aside"
+    "footer footer footer";
+    row-gap: 0.5em;
+    /*justify-items: end;*/
+    /*align-items: end;*/
+    justify-content: start;
+    align-content: end;
+}
+
+
+.items{
+    /*width: 100px;
+    height: 100px;*/
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1{
+    background-color: gold;
+    /*grid-column: 1/4;*/
+    grid-area: header;
+    
+}
+
+.item2{
+    background-color:darkblue;
+    /*grid-column: 1/2;
+    grid-row: 2/4;*/
+    grid-area: nav;
+}
+
+.item3{
+    background-color:rosybrown;
+    /*grid-column: 2/3;
+    grid-row: 2/4;*/
+    grid-area: main;
+}
+
+.item4{
+    background-color:snow;
+    /*grid-column: 3/4;
+    grid-row: 2/4;*/
+    grid-area: aside;
+}
+
+.item5{
+    background-color:hotpink;
+    /*grid-column: 1/4;*/
+    grid-area: footer;
 }
 
 
