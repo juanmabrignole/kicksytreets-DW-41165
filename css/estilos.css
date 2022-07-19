@@ -37,6 +37,45 @@ p{
     border-radius: 10px;
 }
 
+/*Animation Css*/
+.img-main{
+    animation-name: animo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animo {
+    0%{
+        transform: scale(.5);
+        border-radius: 100%;
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(2);
+
+    }
+   
+}
+
+/*Animate css*/
+.camada41165{
+    font-family: "poppins", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #f10086;
+
+    animation-name: backInLeft;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+}
+
 /*Videos*/
 .video-homenaje{
     width: 60%;
@@ -155,7 +194,15 @@ video{
     text-decoration: none;
     color: white;
     font-family: "poppins", sans-serif;
+    transition: all 2s;
 }
+
+/*Transiciones en CSS*/
+.boton:hover{
+    height: 200px;
+    background-color: red;
+}
+
 
 /*Modificador*/
 .boton--alternativo{
@@ -301,6 +348,76 @@ a{
     /*grid-column: 1/4;*/
     grid-area: footer;
 }
+
+/*gradientes CSS*/
+.lideramos{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    width: 100vw;
+    max-width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    border: 5px groove #000;
+
+    /*Gradientes*/
+    /*background-image: linear-gradient(to top, blue,red);*/
+
+    background-image: linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, rgba(5,54,154,1) 90.7% );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Transformaciones CSS*/
+.cajita-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cajita{
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 150px;
+    color: #fff;
+
+    margin: 20px 15px;
+    width: 150px;
+    height: 150px;
+    background-color: #f10086;  
+}
+
+/*Transform Traslate*/
+.traslate{
+    background-color: darkmagenta;
+    transform: translate(50px, 50px);
+}
+
+/*Transform Rotate*/
+.rotate{
+    background-color: blueviolet;
+    transform: rotate(30deg);
+}
+
+/*Transform Scale*/
+.scale{
+    background-color: darkorange;
+    transform: scale(2,2);    
+}
+
+/*Transform Skew*/
+.skew{
+    background-color: darkgreen;
+    transform: skewX(30deg) skewY(40deg);
+}
+
+
 
 /*CSS Grids Responsive/*
 /*Media queries teoría*/
