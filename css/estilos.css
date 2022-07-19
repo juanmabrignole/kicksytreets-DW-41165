@@ -302,7 +302,9 @@ a{
     grid-area: footer;
 }
 
+/*CSS Grids Responsive/*
 /*Media queries teoría*/
+/*Mobile*/
 @media (max-width: 768px){
     .grid-container{
         font-family: "poppins", sans-serif;
@@ -328,28 +330,26 @@ a{
     .item2{
         display: none;
     }
-
 }
 
-
-/*Grid Responsive Practice*/
 .body-contact{
-    background: #181818;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    padding: 0 1.5em;
+    padding: 0 1.5rem;
 }
 
 .contenido{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding: 2rem;
 }
 
 .nombre-empresa{
+    margin-bottom: 1rem;
+    color: black;
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .nombre-empresa span{
@@ -357,18 +357,17 @@ a{
 }
 
 .contenedor-contacto{
-    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
-.contenedor-contacto > *{
-    padding: 1em;
+.contenedor-contacto > * {
+    padding: 1rem;
 }
 
 .formulario-contacto{
     background-color: #222222;
 }
 
-/*Aplico Grid*/
 .formulario-contacto form{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -376,7 +375,6 @@ a{
 
 .formulario-contacto form .bloque{
     grid-column: 1/3;
-
 }
 
 .formulario-contacto form p{
@@ -388,10 +386,10 @@ a{
 .formulario-contacto form input,
 .formulario-contacto form textarea{
     width: 100%;
-    padding: .7em;
+    padding: .7rem;
     border: none;
     background: none;
-    outline: 0;
+    outline: none;
     border-bottom: 1px solid #f10086;
     color: #fff;
 }
@@ -400,14 +398,13 @@ a{
     background-color: #f10086;
     border: 0;
     text-transform: uppercase;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .info-contacto{
     background-color: #000;
 }
 
-.info-contacto h4,
 .info-contacto ul,
 .info-contacto p{
     text-align: center;
@@ -420,14 +417,11 @@ a{
 }
 
 .info-contacto ul li{
-    padding: .3em;
+    padding: .3rem;   
 }
 
-/*media queries*/
-/*LG*/
-
-@media (min-width: 768px) {
-
+/*Responsive LG*/
+@media (min-width: 768px){
     .body-contact{
         height: 100vh;
         padding: 0 4rem;
@@ -439,18 +433,19 @@ a{
     }
 
     .contenedor-contacto > *{
-        padding: 2em;
+        padding: 2rem;
     }
 
-    .info-contacto h4,
     .info-contacto ul,
     .info-contacto p{
-        padding: 1em;
+        padding: 1rem;
         text-align: left;
-        
     }
-    
+
 }
+
+
+
 
 
 
