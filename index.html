@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Animate CSS-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <!--icono marca-->
-    <link rel="shortcut icon" href="./assets/icons/logo-favicon_Mesa de trabajo 1.svg" type="image/x-icon">
+    
+    <!--bootstrap --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!--Hoja de Estilos de manera externa-->
     <link rel="stylesheet" href="./css/estilos.css">
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--icono marca-->
+    <link rel="shortcut icon" href="./assets/icons/logo-favicon_Mesa de trabajo 1.svg" type="image/x-icon">
     <title>Kickstreets-Home</title>
 </head>
 
 <body>
 
     <!--HTML SEMÁNTICO-->
-<!--Mi barra de navegacion en cabecera-->
+<!--Mi barra de navegacion en cabecera con Flexbox
 <header>
     <div class="logo">
        <a href="#">Inicio</a>
@@ -27,9 +29,15 @@
    
     <nav>
        <ul class="nav__list">
-           <li class="list__links"><a href="./pages/promociones.html">Promociones</a></li>
-           <li class="list__links"><a href="./pages/mujer.html">Mujer</a></li>
-           <li class="list__links"><a href="./pages/hombre.html">Hombre</a></li> 
+            <li class="list__linkst">
+                <a href="./pages/promociones.html">Promociones</a>
+            </li>
+            <li class="list__links">
+                <a href="./pages/mujer.html">Mujer</a>
+            </li>
+            <li class="list__links">
+                <a href="./pages/hombre.html">Hombre</a>
+            </li> 
        </ul>   
     </nav>
    
@@ -38,30 +46,108 @@
        </button>
    
    </header>
+-->
 
-
-<!--Listas Anidadas
-<section>
-    <article>
-        <h3>Reseñas de nuestras zapas</h3>
-        <ul>
-            <li>Argentina
-                <ul>-->
-                    <!--Enlaces Absolutos
-                    <li> <a href="https://www.lanacion.com.ar/ultimas-noticias/?gclid=CjwKCAjwquWVBhBrEiwAt1Kmwhe5TS4DdTXcPzm-SbgxY1l9kNqA-Ew-VhwV82c7L2fUa8Jz6ctUyRoCDPkQAvD_BwE" target="_blank">La Nación</a> </li>
-                    <li> <a href="https://www.infobae.com/" target="_blank">Infobae</a> </li>
-                    <li> <a href="https://www.clarin.com/" target="_blank">Clarín</a> </li>
-                </ul>
-            </li>
-
-            <li>España
-                <ul>
-                    <li> <a href="https://elpais.com/?ed=es" target="_blank">El País</a></li>
-                </ul>
-            </li>
+<!--Barra de navegacion con bootstrap-->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
         </ul>
-    </article>
-</section>-->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Sliders con Bootstrap-->
+  <div class="container mt-4">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/products/gorras.jpg" class="d-block w-100" alt="gorras">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/products/run.jpg" class="d-block w-100" alt="corriendo">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/products/zapas.jpg" class="d-block w-100" alt="zapas">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!--Contenedores Bootstrap-->
+<div class="container border border-3 border-danger mt-3">
+    <h2 class="display-4 text-center">Bienvenidos al sitio oficial de Kickstreets</h2>
+    <p class="lead text-center" >Aquí encontrarás lo último y lo mejor en productos deportivos</p>
+</div>
+
+
+<!--Sistema de Grillas en Bootstrap-->
+<div class="container text-center mt-3 mb-6">
+    <div class="row">
+      <div class="col col-md-12 col-lg-4 bg-primary">
+        Column
+      </div>
+      <div class="col col-md-12 col-lg-4 bg-secondary">
+        Column
+      </div>
+      <div class="col col-md-12 col-lg-4 bg-success">
+        Column
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-12 col-lg-6 bg-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sapiente dolore! Neque, mollitia eveniet. Fugiat sed odio deleniti at eum.
+        </div>
+        <div class="col col-md-12 col-lg-6 bg-light">
+          <img class="img-fluid" src="./assets/img/mujer/lohacemosjuntas.jpg" alt="lohacemosjuntas">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eum!</p>
+        </div>
+      </div>
+
+  </div>
 
 
 
@@ -73,6 +159,7 @@
            <!--Imagen Zapas Nike Air-->
            <img class="img-main" src="./assets/img/airjordan.jpg" alt="airjordan">
             <p class="font-destacados">Air Jordan</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button class="boton">Comprar</button>
         </article>
         
@@ -80,6 +167,7 @@
             <!--Imagen Zapas Nike-->
             <img class="img-main" src="./assets/img/alexander-rotker-l8p1aWZqHvE-unsplash.jpg" alt="">
             <p class="font-destacados">Linea lebrón</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button class="boton">Comprar</button>
             
         </article>
@@ -88,6 +176,7 @@
             <!--Imagen Zapas Nike-->
             <img class="img-main" src="./assets/img/malvestida-DMl5gG0yWWY-unsplash.jpg" alt="">
             <p class="font-destacados">Linea curry</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button class="boton">Comprar</button>    
         </article>
     </section>
@@ -95,12 +184,98 @@
 
 <!--en este sector voy a poner un video y dos banners-->
 <section class="video-homenaje">
-    <h3>Les presentamos el video commemorativo de los 50 años de la fundación de Nike</h3>
+    <!--Tipografia Bootstrap-->
+    <p class="h3">Les presentamos el video commemorativo por los 50 años de la fundación de Nike</p>
     <video poster="./assets/video/poster50años01.jpg" src="./assets/video/Nike 50 Años.mp4" controls></video>
 
     <!--audio-->
     <audio src="./assets/audio/Pray - Anno Domini Beats.mp3" controls autoplay></audio>
 </section>
+
+<!--Tablas en Bootstrap-->
+<section>
+    <h3>Guía de Talles</h3>
+    <h4>Mujer</h4>
+    <!--Tabla guía de talles mujer-->
+    <div class="container">
+    <table class="table">
+        <tr>
+            <th class="table-primary">ARG</th>
+            <th class="table-secondary">UK</th>
+            <th class="table-success">US</th>
+            <th class="table-danger">EUR</th>
+            <th class="table-light">CM</th>
+        </tr>
+
+        <tr>
+            <td>34.5</td>
+            <td>3</td>
+            <td>5.5</td>
+            <td>35.5</td>
+            <td>22</td>
+        </tr>
+
+        <tr>
+            <td>35</td>
+            <td>3.5</td>
+            <td>6</td>
+            <td>36</td>
+            <td>22.5</td>
+        </tr>
+    </table>
+</div>
+</section>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+
+<!--Formulario Bootstrap-->
+<div class="container mt-3">
+        <h3>Decínos Hola</h3>
+        <form action="">
+            <p>
+                <label for="nombre-completo">Nombre completo</label>
+                <input class="form-control" type="text" name="nombre-completo">
+            </p>
+
+            <p>
+                <label for="correo">Correo Electrónico</label>
+                <input class="form-control" type="email" name="correo">
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono</label>
+                <input class="form-control" type="tel" name="telefono">
+            </p>
+
+            <p>
+                <label for="asunto">Asunto</label>
+                <input class="form-control" type="text" name="asunto">
+            </p>
+
+            <p class="bloque">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" name="mensaje" rows="3"></textarea>
+            </p>
+
+            <p class="bloque">
+                <button type="submit" class="btn btn-outline-primary">
+                    Enviar
+                </button>
+            </p>
+
+        </form>
+   
+</div>
+
 
 
 
@@ -116,6 +291,8 @@
         <!--Iconos de redes-->
     </article>
 </footer>
-    
+
+
+
 </body>
 </html>

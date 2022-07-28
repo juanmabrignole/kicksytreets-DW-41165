@@ -37,7 +37,7 @@ p{
     border-radius: 10px;
 }
 
-/*Animation Css*/
+/*Animation Css
 .img-main{
     animation-name: animo;
     animation-duration: 1.5s;
@@ -63,10 +63,12 @@ p{
    
 }
 
+*/
+
 /*Animate css*/
 .camada41165{
     font-family: "poppins", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     color: #f10086;
 
@@ -417,7 +419,10 @@ a{
     transform: skewX(30deg) skewY(40deg);
 }
 
-
+/*Sliders en Bootstrap*/
+.carousel-item{
+    max-height: 60rem;
+}
 
 /*CSS Grids Responsive/*
 /*Media queries teoría*/
