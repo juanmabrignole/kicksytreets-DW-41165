@@ -424,6 +424,70 @@ a{
     max-height: 60rem;
 }
 
+/*Pseudoclases*/
+.list__links a:hover{
+    background: #f10086;
+    border-radius: 5px;
+}
+
+.list__links a:active{
+    background: white;
+    color: black;
+
+}
+
+.list__links a:link{
+    color: green;
+}
+
+.list__links:visited{
+    color: green;
+}
+
+
+/*Firts and last child*/
+.grupo{
+    width: 500px;
+    margin: 20px;
+    background-color: gray;
+}
+
+.parrafos p:first-child{
+    background: red;
+    color: white;
+}
+
+.parrafos p:last-child{
+    background: black;
+    color: white;
+}
+
+/*Firts and last of type*/
+.elementos p:first-of-type{
+    background: #f10086;
+    color: white;   
+}
+
+.elementos div:last-of-type{
+    background: #f10086;
+    color: white;   
+}
+
+/*nth-child() & nth-last-child()*/
+
+.lista :nth-child(2){
+    background: #00cdf1;
+    color: black; 
+}
+
+.lista :nth-last-child(2){
+    background: red;
+    color: black; 
+}
+
+
+
+
 /*CSS Grids Responsive/*
 /*Media queries teoría*/
 /*Mobile*/
@@ -564,6 +628,35 @@ a{
         text-align: left;
     }
 
+}
+
+
+/*PROMOCIONES/*
+/*Responsive MediaQueries*/
+
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .principal-promociones{
+        background-color: red;
+    }
+    
+    .remeras{
+        border: 1px solid red;
+        max-width: 100%;
+    }
+    
+    .remeras__titulo{
+        font-size: 1.2rem;
+        font-family: 'poppins', sans-serif;
+        margin-top: 15px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .remeras__img{
+        width: 50%;
+        margin: 20px 25%;
+    }
 }
 
 
