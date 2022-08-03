@@ -6,7 +6,7 @@
     src: url("../assets/fonts/Poppins-SemiBold.ttf");
 }
 
-/*Selector Universal*/
+/*Selector Universal-reset*/
 *{
    margin: 0;
    padding: 0; 
@@ -382,7 +382,6 @@ a{
 }
 
 .cajita{
-
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     text-align: center;
@@ -394,6 +393,7 @@ a{
     height: 150px;
     background-color: #f10086;  
 }
+
 
 /*Transform Traslate*/
 .traslate{
@@ -426,63 +426,48 @@ a{
 
 /*Pseudoclases*/
 .list__links a:hover{
-    background: #f10086;
+    background-color: #f10086;
     border-radius: 5px;
+    color: red;
 }
 
 .list__links a:active{
     background: white;
     color: black;
-
 }
 
-.list__links a:link{
-    color: green;
-}
-
-.list__links:visited{
+.list__links a:visited{
     color: green;
 }
 
 
 /*Firts and last child*/
-.grupo{
-    width: 500px;
-    margin: 20px;
-    background-color: gray;
-}
 
-.parrafos p:first-child{
-    background: red;
-    color: white;
-}
 
-.parrafos p:last-child{
-    background: black;
-    color: white;
-}
+
 
 /*Firts and last of type*/
 .elementos p:first-of-type{
-    background: #f10086;
-    color: white;   
+    background-color: #f10086;
+    color: white;
 }
 
 .elementos div:last-of-type{
-    background: #f10086;
-    color: white;   
+    background-color: #f10086;
+    color: white;
 }
+
+
 
 /*nth-child() & nth-last-child()*/
-
-.lista :nth-child(2){
-    background: #00cdf1;
-    color: black; 
+.lista :nth-last-child(2){
+    background-color: #00cdf1;
+    color: black;
 }
 
-.lista :nth-last-child(2){
-    background: red;
-    color: black; 
+.lista :nth-child(2){
+    background-color: #00cdf1;
+    color: black;
 }
 
 
@@ -633,35 +618,35 @@ a{
 
 /*PROMOCIONES/*
 /*Responsive MediaQueries*/
-
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+/*Mas de 1 breakpoint*/
+/*Breakpoint de Dispositivo + breakpoint de resolucion*/
+@media screen and (orientation: landscape) and (max-width:768px){
     .principal-promociones{
         background-color: red;
     }
-    
+
     .remeras{
-        border: 1px solid red;
+        border: 1px solid black;
         max-width: 100%;
     }
-    
+
     .remeras__titulo{
         font-size: 1.2rem;
-        font-family: 'poppins', sans-serif;
+        font-family: "poppins", sans-serif;
         margin-top: 15px;
         text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #fff;
     }
+
     .remeras__img{
         width: 50%;
-        margin: 20px 25%;
+        margin:  20px 25%;
     }
+
+
 }
-
-
-
-
 
 
 
