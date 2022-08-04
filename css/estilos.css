@@ -1,40 +1,77 @@
-/*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-/*Font Descargada*/
-@font-face {
-    font-family: "poppins";
-    src: url("../assets/fonts/Poppins-SemiBold.ttf");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+h1 {
+  color: gray;
+  font-family: garamond;
 }
 
+p {
+  color: #000;
+}
+
+header {
+  background-color: green;
+}
+header nav {
+  padding: 20px;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  color: green;
+}
+header nav ul li a {
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  font-size: 30px;
+}
+
+body {
+  background-color: green;
+  padding: 20px;
+}
+
+header {
+  background-color: green;
+}
+
+/*Fonts*/
+/*Font Descargada*/
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf");
+}
 /*Selector Universal-reset*/
-*{
-   margin: 0;
-   padding: 0; 
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*medidas*/
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
 /*Medidas Relativas*/
-p{
-    font-family: "poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
+p {
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /*Manejo de Imágenes*/
-.principales{
-    margin: 25px;
+.principales {
+  margin: 25px;
 }
 
-.img-main{
-    width: 33.33%;
-    box-shadow: 8px -10px gold;
-    padding: 30px auto;
-    border-radius: 10px;
+.img-main {
+  width: 33.33%;
+  box-shadow: 8px -10px gold;
+  padding: 30px auto;
+  border-radius: 10px;
 }
 
 /*Animation Css
@@ -60,598 +97,536 @@ p{
         transform: scale(2);
 
     }
-   
+
 }
 
 */
-
 /*Animate css*/
-.camada41165{
-    font-family: "poppins", sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color: #f10086;
-
-    animation-name: backInLeft;
-    animation-duration: 5s;
-    animation-delay: 3s;
-    animation-timing-function: ease-out;
+.camada41165 {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #f10086;
+  animation-name: backInLeft;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
 }
 
 /*Videos*/
-.video-homenaje{
-    width: 60%;
-    margin: auto;
+.video-homenaje {
+  width: 60%;
+  margin: auto;
 }
 
-video{
-    width: 100%;
+video {
+  width: 100%;
 }
 
-
-.font-destacados{
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.font-destacados {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-#footer{
-    width: 100%;
-    background-color: black;
-    color: goldenrod;
-    padding: 20px 20px;
-    background-image: url('../assets/backgrounds/3d-abstract-wave-pattern-background.jpg');
-    background-size: cover;
-    background-position: center;
-    font-family: 'Oswald', sans-serif;
+#footer {
+  width: 100%;
+  background-color: black;
+  color: goldenrod;
+  padding: 20px 20px;
+  background-image: url("../assets/backgrounds/3d-abstract-wave-pattern-background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Oswald", sans-serif;
 }
 
 /*Background-image*/
 /*Efecto Parallax*/
-.banner{
-    width: 100%;
-    height: 700px;
-    background-image: url("../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg");
-    background-size: cover;
-    /*Parallax*/
-    background-attachment: fixed;
+.banner {
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/backgrounds/mike-von-RP7mZFXz7L0-unsplash.jpg");
+  background-size: cover;
+  /*Parallax*/
+  background-attachment: fixed;
 }
 
-.banner2{
-    width: 100%;
-    height: 700px;
-    background-image: url("../assets/img/lasbarrets-01.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.banner2 {
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/img/lasbarrets-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*Woman Section*/
-.imgbannerwoman{
-    width: 100vw;
-    height: 50%;
+.imgbannerwoman {
+  width: 100vw;
+  height: 50%;
 }
 
 /*Box-Modeling*/
-
-
-/*Elementos de línea, Bloque y Linea-Bloque*/ 
-
-
-
-
+/*Elementos de línea, Bloque y Linea-Bloque*/
 /*Tarjetas Mujer*/
 /*Metodologia BEM*/
-.contenedor{
-    max-width: 500px;
-    width: 100%;
-    margin-left: 15px;
+.contenedor {
+  max-width: 500px;
+  width: 100%;
+  margin-left: 15px;
 }
 
 /*Bloque 1*/
-.tarjeta{
-    width: 600px;
-    border: 5px solid black;
+.tarjeta {
+  width: 600px;
+  border: 5px solid black;
 }
 
-.tarjeta__miniatura{
-    height: 200px;
+.tarjeta__miniatura {
+  height: 200px;
 }
 
-.tarjeta__imagen{
-    width: 60%;
+.tarjeta__imagen {
+  width: 60%;
 }
 
-.tarjeta__textos{
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: black;
+.tarjeta__textos {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
 }
 
-.tarjeta__enlace{
-    color: #f10086;
-    padding: 10px auto;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+.tarjeta__enlace {
+  color: #f10086;
+  padding: 10px auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
 
-.tarjeta__parrafo{
-    font-family: 'Oswald', sans-serif;
-    max-width: 90%;
-    line-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
+.tarjeta__parrafo {
+  font-family: "Oswald", sans-serif;
+  max-width: 90%;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 /*Bloque 2*/
-.boton{
-    font-size: 14px;
-    padding: 8px 35px;
-    background-color: #000;
-    border-radius: 25px;
-    text-decoration: none;
-    color: white;
-    font-family: "poppins", sans-serif;
-    transition: all 2s;
+.boton {
+  font-size: 14px;
+  padding: 8px 35px;
+  background-color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-family: "poppins", sans-serif;
+  transition: all 2s;
 }
 
 /*Transiciones en CSS*/
-.boton:hover{
-    height: 200px;
-    background-color: red;
+.boton:hover {
+  height: 200px;
+  background-color: red;
 }
-
 
 /*Modificador*/
-.boton--alternativo{
-    font-size: 20px;
-    font-weight: bold;
+.boton--alternativo {
+  font-size: 20px;
+  font-weight: bold;
 }
-
 
 /*Flexbox*/
-.flex-container{
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*Eje X*/
-    justify-content: center;
-    /*Eje Y*/
-    align-items: center;
-    /*Alinea en el eje y cuando los elementos son multilinea*/
-    align-content: space-around;
-    font-size: 3rem;
-    font-family: "poppins", sans-serif;
-    background-color: #f10086;
-    border-radius: 10px;
-    border: 2px solid yellow;  
+.flex-container {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*Eje X*/
+  justify-content: center;
+  /*Eje Y*/
+  align-items: center;
+  /*Alinea en el eje y cuando los elementos son multilinea*/
+  align-content: space-around;
+  font-size: 3rem;
+  font-family: "poppins", sans-serif;
+  background-color: #f10086;
+  border-radius: 10px;
+  border: 2px solid yellow;
 }
 
-.flex-container > *{
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: aqua;
+.flex-container > * {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: aqua;
 }
 
 /*order*/
-.uno{
-    order: 3;
+.uno {
+  order: 3;
 }
 
 /*Navbar Flexbox*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    font-family: "poppins", sans-serif;
-    background-color: #000;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-family: "poppins", sans-serif;
+  background-color: #000;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*Columna en fila*/
-.nav__list{
-    display: flex;
-    list-style-type: none;
+.nav__list {
+  display: flex;
+  list-style-type: none;
 }
 
-.nav__list .list__links{
-    padding: 0 15px;
+.nav__list .list__links {
+  padding: 0 15px;
 }
 
-.btn{
-    border: none;
+.btn {
+  border: none;
 }
 
-
-.btn a{
-    background-color: aqua;
-    padding: 10px;
-    border-radius: 10px;
-    color: #000;
+.btn a {
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
 }
 
 /*CSS GRIDS*/
 /*Css Grid Teoría*/
-.grid-container{
-    font-family: "poppins", sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-    border: 1px groove black;
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "header header header"
-    "nav    main    aside"
-    "nav    main    aside"
-    "footer footer footer"
-    ;
-    gap: 10px;
-
-    /*justify-items: center;
-    align-items: center;*/
-
+.grid-container {
+  font-family: "poppins", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  border: 1px groove black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header header header" "nav    main    aside" "nav    main    aside" "footer footer footer";
+  gap: 10px;
+  /*justify-items: center;
+  align-items: center;*/
 }
 
-.items{
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.items {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.item1{
-    background-color: gold;
-    /*grid-column: 1/4;*/
-    grid-area: header;
+.item1 {
+  background-color: gold;
+  /*grid-column: 1/4;*/
+  grid-area: header;
 }
 
-.item2{
-    background-color: darkblue;
-    /*grid-column: 1/2;
-    grid-row: 2/4;*/
-    grid-area: nav;
+.item2 {
+  background-color: darkblue;
+  /*grid-column: 1/2;
+  grid-row: 2/4;*/
+  grid-area: nav;
 }
 
-.item3{
-    background-color: rosybrown;
-    /*grid-column: 2/3;
-    grid-row: 2/4;*/
-    grid-area: main;
+.item3 {
+  background-color: rosybrown;
+  /*grid-column: 2/3;
+  grid-row: 2/4;*/
+  grid-area: main;
 }
 
-.item4{
-    background-color: snow;
-    /*grid-column: 3/4;
-    grid-row: 2/4;*/
-    grid-area: aside;
+.item4 {
+  background-color: snow;
+  /*grid-column: 3/4;
+  grid-row: 2/4;*/
+  grid-area: aside;
 }
 
-.item5{
-    background-color: hotpink;
-    /*grid-column: 1/4;*/
-    grid-area: footer;
+.item5 {
+  background-color: hotpink;
+  /*grid-column: 1/4;*/
+  grid-area: footer;
 }
 
 /*gradientes CSS*/
-.lideramos{
-    font-family: 'Oswald', sans-serif;
-    font-size: 40px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 800;
-
-    width: 100vw;
-    max-width: 90%;
-    height: 300px;
-    margin: 20px auto;
-    border: 5px groove #000;
-
-    /*Gradientes*/
-    /*background-image: linear-gradient(to top, blue,red);*/
-
-    background-image: linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, rgba(5,54,154,1) 90.7% );
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.lideramos {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 100vw;
+  max-width: 90%;
+  height: 300px;
+  margin: 20px auto;
+  border: 5px groove #000;
+  /*Gradientes*/
+  /*background-image: linear-gradient(to top, blue,red);*/
+  background-image: linear-gradient(89.9deg, rgb(255, 243, 110) 16.9%, rgb(30, 204, 214) 55.1%, rgb(5, 54, 154) 90.7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Transformaciones CSS*/
-.cajita-container{
-    display: flex;
-    justify-content: center;
+.cajita-container {
+  display: flex;
+  justify-content: center;
 }
 
-.cajita{
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    line-height: 150px;
-    color: #fff;
-
-    margin: 20px 15px;
-    width: 150px;
-    height: 150px;
-    background-color: #f10086;  
+.cajita {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  margin: 20px 15px;
+  width: 150px;
+  height: 150px;
+  background-color: #f10086;
 }
-
 
 /*Transform Traslate*/
-.traslate{
-    background-color: darkmagenta;
-    transform: translate(50px, 50px);
+.traslate {
+  background-color: darkmagenta;
+  transform: translate(50px, 50px);
 }
 
 /*Transform Rotate*/
-.rotate{
-    background-color: blueviolet;
-    transform: rotate(30deg);
+.rotate {
+  background-color: blueviolet;
+  transform: rotate(30deg);
 }
 
 /*Transform Scale*/
-.scale{
-    background-color: darkorange;
-    transform: scale(2,2);    
+.scale {
+  background-color: darkorange;
+  transform: scale(2, 2);
 }
 
 /*Transform Skew*/
-.skew{
-    background-color: darkgreen;
-    transform: skewX(30deg) skewY(40deg);
+.skew {
+  background-color: darkgreen;
+  transform: skewX(30deg) skewY(40deg);
 }
 
 /*Sliders en Bootstrap*/
-.carousel-item{
-    max-height: 60rem;
+.carousel-item {
+  max-height: 60rem;
 }
 
 /*Pseudoclases*/
-.list__links a:hover{
-    background-color: #f10086;
-    border-radius: 5px;
-    color: red;
+.list__links a:hover {
+  background-color: #f10086;
+  border-radius: 5px;
+  color: red;
 }
 
-.list__links a:active{
-    background: white;
-    color: black;
+.list__links a:active {
+  background: white;
+  color: black;
 }
 
-.list__links a:visited{
-    color: green;
+.list__links a:visited {
+  color: green;
 }
-
 
 /*Firts and last child*/
-
-
-
-
 /*Firts and last of type*/
-.elementos p:first-of-type{
-    background-color: #f10086;
-    color: white;
+.elementos p:first-of-type {
+  background-color: #f10086;
+  color: white;
 }
 
-.elementos div:last-of-type{
-    background-color: #f10086;
-    color: white;
+.elementos div:last-of-type {
+  background-color: #f10086;
+  color: white;
 }
-
-
 
 /*nth-child() & nth-last-child()*/
-.lista :nth-last-child(2){
-    background-color: #00cdf1;
-    color: black;
+.lista :nth-last-child(2) {
+  background-color: #00cdf1;
+  color: black;
 }
 
-.lista :nth-child(2){
-    background-color: #00cdf1;
-    color: black;
+.lista :nth-child(2) {
+  background-color: #00cdf1;
+  color: black;
 }
-
-
-
 
 /*CSS Grids Responsive/*
 /*Media queries teoría*/
 /*Mobile*/
-@media (max-width: 768px){
-    .grid-container{
-        font-family: "poppins", sans-serif;
-        font-size: 25px;
-        text-transform: uppercase;
-    
-        width: 90%;
-        height: 600px;
-        margin: 40px auto;
-        border: 1px groove black;
-    
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: 
-        "header"
-        "main"
-        "aside"
-        "footer"
-        ;
-        gap: 10px;
-    }
-    .item2{
-        display: none;
-    }
+@media (max-width: 768px) {
+  .grid-container {
+    font-family: "poppins", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    border: 1px groove black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "main" "aside" "footer";
+    gap: 10px;
+  }
+  .item2 {
+    display: none;
+  }
+}
+.body-contact {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.5rem;
 }
 
-.body-contact{
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    padding: 0 1.5rem;
+.contenido {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
 }
 
-.contenido{
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
+.nombre-empresa {
+  margin-bottom: 1rem;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
 }
 
-.nombre-empresa{
-    margin-bottom: 1rem;
-    color: black;
-    text-align: center;
-    font-size: 3rem;
+.nombre-empresa span {
+  color: #f10086;
 }
 
-.nombre-empresa span{
-    color: #f10086;
-}
-
-.contenedor-contacto{
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+.contenedor-contacto {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .contenedor-contacto > * {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-.formulario-contacto{
-    background-color: #222222;
+.formulario-contacto {
+  background-color: #222222;
 }
 
-.formulario-contacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.formulario-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.formulario-contacto form .bloque{
-    grid-column: 1/3;
+.formulario-contacto form .bloque {
+  grid-column: 1/3;
 }
 
-.formulario-contacto form p{
-    margin: 0;
-    padding: 1em;
+.formulario-contacto form p {
+  margin: 0;
+  padding: 1em;
 }
 
 .formulario-contacto form button,
 .formulario-contacto form input,
-.formulario-contacto form textarea{
-    width: 100%;
-    padding: .7rem;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid #f10086;
-    color: #fff;
+.formulario-contacto form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #f10086;
+  color: #fff;
 }
 
-.formulario-contacto form button{
-    background-color: #f10086;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1rem;
+.formulario-contacto form button {
+  background-color: #f10086;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1rem;
 }
 
-.info-contacto{
-    background-color: #000;
+.info-contacto {
+  background-color: #000;
 }
 
 .info-contacto ul,
-.info-contacto p{
-    text-align: center;
-    margin: 0 0 1rem 0;
+.info-contacto p {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
-.info-contacto ul{
-    list-style-type: none;
-    padding: 0;
+.info-contacto ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.info-contacto ul li{
-    padding: .3rem;   
+.info-contacto ul li {
+  padding: 0.3rem;
 }
 
 /*Responsive LG*/
-@media (min-width: 768px){
-    .body-contact{
-        height: 100vh;
-        padding: 0 4rem;
-    }
-
-    .contenedor-contacto{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .contenedor-contacto > *{
-        padding: 2rem;
-    }
-
-    .info-contacto ul,
-    .info-contacto p{
-        padding: 1rem;
-        text-align: left;
-    }
-
+@media (min-width: 768px) {
+  .body-contact {
+    height: 100vh;
+    padding: 0 4rem;
+  }
+  .contenedor-contacto {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contenedor-contacto > * {
+    padding: 2rem;
+  }
+  .info-contacto ul,
+.info-contacto p {
+    padding: 1rem;
+    text-align: left;
+  }
 }
-
-
 /*PROMOCIONES/*
 /*Responsive MediaQueries*/
 /*Mas de 1 breakpoint*/
 /*Breakpoint de Dispositivo + breakpoint de resolucion*/
-@media screen and (orientation: landscape) and (max-width:768px){
-    .principal-promociones{
-        background-color: red;
-    }
-
-    .remeras{
-        border: 1px solid black;
-        max-width: 100%;
-    }
-
-    .remeras__titulo{
-        font-size: 1.2rem;
-        font-family: "poppins", sans-serif;
-        margin-top: 15px;
-        text-align: center;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #fff;
-    }
-
-    .remeras__img{
-        width: 50%;
-        margin:  20px 25%;
-    }
-
-
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .principal-promociones {
+    background-color: red;
+  }
+  .remeras {
+    border: 1px solid black;
+    max-width: 100%;
+  }
+  .remeras__titulo {
+    font-size: 1.2rem;
+    font-family: "poppins", sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .remeras__img {
+    width: 50%;
+    margin: 20px 25%;
+  }
 }
 
-
-
-
-
-
-
-
+/*# sourceMappingURL=estilos.css.map */
