@@ -2,8 +2,6 @@
 @import "fonts";
 
 
-
-
 //Variables
 $background: green;
 $relleno: 20px;
@@ -39,18 +37,106 @@ header{
     }
 }
 
-
-
-
+/*Operadores Matematicos + - / * */
+$ancho: 720px;
+$rosa: #f10086;
+$color: yellow;
 
 body{
-    background-color: $background;
-    padding: $relleno;
+
+    @if ($color == green) {
+        background-color: green;
+    } @else if ($color == red){
+        background-color: red;
+    } @else {
+        background-color: blue;
+    }
+    width: ($ancho / 2) + 3;
 }
 
-header{
-    background-color: $background;
+/*Bucle FOR - Ciclo Exacto*/
+@for $i from 1 through 6{
+    //interpolacion
+    h#{$i}{
+        font-size: $i * 2rem;
+    }
+} 
+
+/*Bucle @Each*/
+$lista1: red, green, blue, yellow;
+
+@each $color in $lista1 {
+    //Interpolacion
+    .#{$color}{
+        background-color: $color;
+    }   
 }
+
+/*Maps*/
+$estilos: (
+    color: green,
+    centro: center,
+    tFuente: 35px,
+    1rem: 1rem
+);
+
+div{
+    background-color: map-get($map: $estilos, $key: color);
+    text-align: map-get($map: $estilos, $key: centro);
+    padding: map-get($map: $estilos, $key: tFuente);
+    font-size: map-get($map: $estilos, $key: 1rem);
+}
+
+/*@extend*/
+.card{
+    background: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 1px 1px 12px 0px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px; 
+}
+
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 12px;
+    font-family: "poppins", sans-serif;
+}
+
+.small{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.principales{
+    @extend .card;
+}
+
+.img-main{
+    @extend .avatar;
+}
+
+/*Funcion Mixin*/
+/*Con Parametros*/
+@mixin crearBordes($colorBorde, $size, $shadow){
+    border: $size solid $colorBorde;
+    border-radius: $size;
+    box-shadow: 0px 0px $size $shadow;
+}
+
+.principales{
+   @include crearBordes(red, 10px, black);
+}
+
+.img-main{
+   @include crearBordes(green,5px,yellow);
+}
+
 
 
 /*Fonts*/
