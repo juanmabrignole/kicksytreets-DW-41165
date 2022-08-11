@@ -1,22 +1,22 @@
-@import "colores";
-@import "fonts";
+/*@import "colores";
+@import "fonts";/*
 
 
 //Variables
 $background: green;
 $relleno: 20px;
 
-h1{
+/*h1{
     color: $color-fonts;
     font-family: $font-principal;
 }
 
 p{
     color: $color-parrafos;
-}
+}*/
 
 
-/*Nesting*/
+/*Nesting
 header{
     background-color: $background;
     nav{
@@ -36,13 +36,14 @@ header{
         }
     }
 }
+*/
 
 /*Operadores Matematicos + - / * */
-$ancho: 720px;
+/*$ancho: 720px;
 $rosa: #f10086;
-$color: yellow;
+$color: yellow;*/
 
-body{
+/*body{
 
     @if ($color == green) {
         background-color: green;
@@ -52,42 +53,30 @@ body{
         background-color: blue;
     }
     width: ($ancho / 2) + 3;
-}
+}*/
 
-/*Bucle FOR - Ciclo Exacto*/
-@for $i from 1 through 6{
-    //interpolacion
-    h#{$i}{
-        font-size: $i * 2rem;
-    }
-} 
 
-/*Bucle @Each*/
+/*Bucle @Each
 $lista1: red, green, blue, yellow;
 
-@each $color in $lista1 {
-    //Interpolacion
-    .#{$color}{
-        background-color: $color;
-    }   
-}
 
-/*Maps*/
+
+/*Maps
 $estilos: (
     color: green,
     centro: center,
     tFuente: 35px,
     1rem: 1rem
-);
+);*/
 
-div{
+/*div{
     background-color: map-get($map: $estilos, $key: color);
     text-align: map-get($map: $estilos, $key: centro);
     padding: map-get($map: $estilos, $key: tFuente);
     font-size: map-get($map: $estilos, $key: 1rem);
-}
+}*/
 
-/*@extend*/
+/*@extend
 .card{
     background: #fff;
     border-radius: 4px;
@@ -120,22 +109,24 @@ div{
 .img-main{
     @extend .avatar;
 }
+*/
 
 /*Funcion Mixin*/
 /*Con Parametros*/
-@mixin crearBordes($colorBorde, $size, $shadow){
+
+/*@mixin crearBordes($colorBorde, $size, $shadow){
     border: $size solid $colorBorde;
     border-radius: $size;
     box-shadow: 0px 0px $size $shadow;
-}
+}*/
 
-.principales{
+/*.principales{
    @include crearBordes(red, 10px, black);
-}
+}*/
 
-.img-main{
+/*.img-main{
    @include crearBordes(green,5px,yellow);
-}
+}*/
 
 
 
@@ -200,8 +191,7 @@ p{
     100%{
         transform: scale(2);
 
-    }
-   
+    }  
 }
 
 */
@@ -273,13 +263,6 @@ video{
     width: 100vw;
     height: 50%;
 }
-
-/*Box-Modeling*/
-
-
-/*Elementos de línea, Bloque y Linea-Bloque*/ 
-
-
 
 
 /*Tarjetas Mujer*/
@@ -582,11 +565,6 @@ a{
 }
 
 
-/*Firts and last child*/
-
-
-
-
 /*Firts and last of type*/
 .elementos p:first-of-type{
     background-color: #f10086;
@@ -597,7 +575,6 @@ a{
     background-color: #f10086;
     color: white;
 }
-
 
 
 /*nth-child() & nth-last-child()*/

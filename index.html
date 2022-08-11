@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="La tienda online de venta de indumentaria deportiva más grande y más actualizada del país">
+    <meta name="keywords" content="ZAPATILLAS, ZAPATILLAS HOMBRE, ZAPATILLAS MUJER, ZAPATILLAS NIKE, ZAPATILLAS NEW BALANCE, SNICKERS">
     <!--bootstrap --> 
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <!--Hoja de Estilos de manera externa-->
@@ -153,34 +156,51 @@
 
 <!--Acá va el contenido más importante de esta página web-->
 <!--Manejo de imágenes-->
-<main>
-    <section>
-        <article class="principales">
-           <!--Imagen Zapas Nike Air-->
-           <img class="img-main" src="./assets/img/airjordan.jpg" alt="airjordan">
-            <p class="font-destacados">Air Jordan</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="boton">Comprar</button>
-        </article>
-        
-        <article class="principales">
-            <!--Imagen Zapas Nike-->
-            <img class="img-main" src="./assets/img/alexander-rotker-l8p1aWZqHvE-unsplash.jpg" alt="">
-            <p class="font-destacados">Linea lebrón</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="boton">Comprar</button>
-            
-        </article>
-        
-        <article class="principales">
-            <!--Imagen Zapas Nike-->
-            <img class="img-main" src="./assets/img/malvestida-DMl5gG0yWWY-unsplash.jpg" alt="">
-            <p class="font-destacados">Linea curry</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="boton">Comprar</button>    
-        </article>
-    </section>
-</main>
+
+<div class="container mt-5 mb-5">
+  <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="assets/img/airjordan_Mesa de trabajo 1-05.jpg" alt="airjordan"> 
+              <div class="card-body">
+              <h5>Air Jordan</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quae.</p>
+              <a href="https://www.grid.com.ar/calzado/zapatillas/hombre?initialMap=genero&map=category-1,category-2,genero&order=OrderByReleaseDateDESC" target="_blank">
+              <button class="boton">Comprar</button>
+              </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="assets/img/NikeMalvestida_Mesa de trabajo 1-05.jpg" alt="campeonato-tenis">
+              <div class="card-body">
+              <h5>Nike Alexander</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quae.</p>
+              <a href="https://www.dexter.com.ar/zapatillas" target="_blank">
+              <button class="boton">Comprar</button>
+              </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="assets/img/NikeAlexander_Mesa de trabajo 1-04.jpg" alt="malvestida-nike">
+              <div class="card-body">
+              <h5>Malvestida Nike</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quae.</p>
+              <a href="https://www.megasports.com.ar/Hombre?PS=12&map=c,specificationFilter_19&O=OrderByTopSaleDESC" target="_blank">
+              <button class="boton">Comprar</button>
+              </a>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  </div>
+
 
 <!--en este sector voy a poner un video y dos banners-->
 <section class="video-homenaje">
